@@ -29,15 +29,20 @@
       <h2 class="links">Links</h2>
     </header>
   
+    <input type="form" size="40px" class="country_input">
+
     <div class="question">
       <br><br>
       <h2>Where do you want to go?</h2>
-      <label><input type="form" size="40px" class="country_input"></label>
-
+      <form id="country_form">
+        <label>country name</label>
+        <input type="form" size="40px" class="country_input">
+        <button type="submit" class="start_button">Bon Voyage!</button>
+      </form>
       <div class="rating">
         <br>
         <h2 class="summary">Summary</h2>
-        <p class="summary_content"></p> <!--fill with innerHTML-->
+        <p id="summary_content"></p> <!--fill with innerHTML-->
         <h3 class="covid_cases">Covid Cases</h3>
         <h4 class="covid_cases_content"></h4> <!--fill with innerHTML-->
         <h3 class="outlook">Outlook</h3>
@@ -50,5 +55,5 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./Develop/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </html>
