@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Develop/style.css" />
+    <title>Covid-19 Travel Planner</title>
+  </head>
+
+  <body>
+    <br><br>
+    <header class="navbar">
+      <h1 class="title">Covid-19 Travel Planner</h1>
+      <h2 class="about_us">About us</h2>
+      <h2 class="links">Links</h2>
+    </header>
+  
+    <input type="form" size="40px" class="country_input">
+
+    <div class="question">
+      <br><br>
+      <h2>Where do you want to go?</h2>
+      <form id="country_form">
+        <label>country name</label>
+        <input type="form" size="40px" class="country_input">
+        <button type="submit" class="start_button">Bon Voyage!</button>
+      </form>
+      <div class="rating">
+        <br>
+        <h2 class="summary">Summary</h2>
+        <p id="summary_content"></p> <!--fill with innerHTML-->
+        <h3 class="covid_cases">Covid Cases</h3>
+        <h4 class="covid_cases_content"></h4> <!--fill with innerHTML-->
+        <h3 class="outlook">Outlook</h3>
+        <h4 class="outlook_content"></h4> <!--fill with innerHTML-->
+        <h2 class="recommendation">Our Recommendation:</h2>
+        <p class="recommendation_content"></p> <!--fill with innerHTML-->
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
