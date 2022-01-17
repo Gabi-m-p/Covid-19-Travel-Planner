@@ -41,7 +41,7 @@ fetch("https://www.covid19-api.com/country?name=China&format=json"
 function country_data (event) {
     event.preventDefault();
     
-    var country_name = document.querySelector(".country_input").value
+    var country_name = document.querySelector("#inputCityName").value
     var new_string = "https://www.covid19-api.com/country?name=" + country_name + "&format=json"
     
     fetch(new_string, {
@@ -106,6 +106,7 @@ function fetch_trip(lat, lon) {
 
 
 
-document.querySelector("#country_form").addEventListener('submit', country_data);
+// document.querySelector("#country_form").addEventListener('submit', country_data);
+document.querySelector("#searchBttn").addEventListener('click', country_data);
 
 
