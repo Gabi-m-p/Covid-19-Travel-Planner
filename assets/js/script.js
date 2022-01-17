@@ -54,22 +54,26 @@ function country_data (event) {
     .then(function (response) {
         return response.json();
     })
-    .then(function(data) {
-	    console.log(data);
+    .then(function(c_data) {
 
         //Display total cases
-        document.querySelector(".covid_cases_content").innerHTML = data[0].confirmed.toString(); 
+        document.querySelector(".covid_cases_content").innerHTML = c_data[0].confirmed.toString(); 
 
         //Display total recoveries 
-        document.querySelector(".recoveries_content").innerHTML = data[0].recovered.toString(); 
+        document.querySelector(".recoveries_content").innerHTML = c_data[0].recovered.toString(); 
 
         //Display total critical cases 
-        document.querySelector(".critical_content").innerHTML = data[0].critical.toString(); 
+        document.querySelector(".critical_content").innerHTML = c_data[0].critical.toString(); 
 
         //Display total deaths 
-        document.querySelector(".deaths_content").innerHTML = data[0].deaths.toString(); 
+        document.querySelector(".deaths_content").innerHTML = c_data[0].deaths.toString(); 
 
-
+        //insert data variables for lat and lon
+        
+        //EXTRACT LAT AND LONG, THEN PUT IN NEXT FETCH FUNCTION
+        fetch_trip(c_data.lat, c_data.lon).then(function (data) {
+            console.log(data);
+        })    
     })
     .catch(err => {
 	console.error(err);
@@ -77,4 +81,31 @@ function country_data (event) {
 }
 
 
+var apiKey = "5ae2e3f221c38a28845f05b67814a6c1ffdb743e584c4c5a2e935572"; 
+
+
+
+sample_link = "https://api.opentripmap.com/0.1/en/places/geoname?name=China&apikey=5ae2e3f221c38a28845f05b67814a6c1ffdb743e584c4c5a2e935572"
+
+
+
+sample_link_2 = "https://api.opentripmap.com/0.1/en/places/radius?radius=5000&lon=144.90&lat=-37.8&apikey=5ae2e3f221c38a28845f05b67814a6c1ffdb743e584c4c5a2e935572"
+
+function fetch_trip(lat, lon) {
+    //pick up lat and lon inside this function
+    return fetch(sample_link_2).then(function (response) {
+    return response.json();
+})
+/*
+.then(function (data) {
+    //console.log(data);
+    console.log(data);
+});
+*/
+}
+
+
+
 document.querySelector("#country_form").addEventListener('submit', country_data);
+
+
