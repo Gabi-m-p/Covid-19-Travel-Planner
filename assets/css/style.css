@@ -1,4 +1,3 @@
-.mycustomCSS{
-flex-direction:column
-
+.covidData{
+    display: none;
 }
