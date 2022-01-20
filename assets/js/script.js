@@ -70,25 +70,24 @@ function getLocationData(){
                     var name = placesData.name
                     var previewImage = placesData.preview.source
                     var wikiText = placesData.wikipedia_extracts.text
-                    listOfDestination.append('<button type="button" class="list-group-item list-group-item-action card">'+name+'</button><div class="p-1"></div>')
+                    listOfDestination.append('<button type="button" onclick="rendersTopFiveDestinations(event)" class="list-group-item list-group-item-action card" id = "'+placesData.xid+'">'+name+'</button><div class="p-1"></div>')
                     listOfDestination.children().eq(1).addClass("active")
-                    $(".card").click(function(){
-                        console.log("hello");
-                        $(this).addClass("active");
-                        $("#imageHolder").attr("src",previewImage);
-                        $("#imageDetails").text(wikiText);
-                        $(this).siblings().removeClass("active");
-                    })
                 })
             }
         })
     })
 }
 
-function rendersTopFiveDestinations(){
-    listOfDestination.append('<button type="button" class="list-group-item list-group-item-action card">'+topFiveDestination.name+'</button><div class="p-1"></div>')
-    listOfDestination.children().eq(1).addClass("active")
-}
+function rendersTopFiveDestinations(event){
+    for(i=0;i<topFiveDestination.length;i++){
+        if(event.target.id === topFiveDestination[i].xid){
+            $("#imageHolder").attr("src",topFiveDestination[i].preview.source);
+            $("#imageDetails").text(topFiveDestination[i].wikipedia_extracts.text);
+        }}
+        $(".card").click(function(){
+            $(this).addClass("active");        
+            $(this).siblings().removeClass("active");})
+        }
 
 //Second API to pull COVID data
 function country_data () {
