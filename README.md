@@ -1,12 +1,18 @@
+# Covid-19 Travel Planner
+
 ## User Story
 
-As a traveller in Australia in a current COVID-19 environment.
-I want to be able to search for an Australian city and be given its current COVID-19 data.
-I also want to be given the top tourist destinations for that same city also.
+As a global traveller in the current COVID-19 environment.
+I want to be able to search for a international city and be given its current COVID-19 data.
+I also want to be given the top 5 tourist destinations for that same city also.
 
 ## Description
 
 This searchable web application allows the user to search for a city and simultaneously be given its COVID-19 data and tourist information.
+In the planning process of this application a wireframe was created in order to visualise the finalized project.
+
+![Wireframe](assets/Images/wireframe.png)
+
 In order to do this two server side api's were integrated into the application using the fetch function. Bootstrap styling was used to aid in the readability of the data, in turn aiding in the accessability of the user. Local storage was also utilised in order to save and display the users search history which also aids in the usability of the application. The "About Us" link in the navbar links to the projects git repository where the various merges and commits can be viewed.
 
 ## Application
@@ -35,9 +41,11 @@ https://github.com/Gabi-m-p
 
 "Covid 19 Data Api"
 https://www.covid19-api.com/
+Developer: Gramzivi https://github.com/Gramzivi/covid19-api-sourcerers
 
 "OpenTripMap Api"
 https://opentripmap.io/product
+Developer: Unknown
 
 <!-- # <Your-Project-Title>
 ## Description
