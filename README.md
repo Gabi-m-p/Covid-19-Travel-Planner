@@ -1,4 +1,45 @@
-# <Your-Project-Title>
+## User Story
+
+As a traveller in Australia in a current COVID-19 environment.
+I want to be able to search for an Australian city and be given its current COVID-19 data.
+I also want to be given the top tourist destinations for that same city also.
+
+## Description
+
+This searchable web application allows the user to search for a city and simultaneously be given its COVID-19 data and tourist information.
+In order to do this two server side api's were integrated into the application using the fetch function. Bootstrap styling was used to aid in the readability of the data, in turn aiding in the accessability of the user. Local storage was also utilised in order to save and display the users search history which also aids in the usability of the application. The "About Us" link in the navbar links to the projects git repository where the various merges and commits can be viewed.
+
+## Application
+
+The application can be accessed here: https://gabi-m-p.github.io/Group-Project-1/
+
+![Travel Planner Screenshot](assets/Images/TravelPlanner.png)
+
+## Usage
+
+This application can be used in any web browser.
+
+## Credits
+
+Suraj Shrestha
+https://github.com/Razor-Ray
+
+Miguel Afable
+https://github.com/Mabsky05
+
+Oscar Bryant
+https://github.com/oscarcbryant
+
+Gabi Purnell
+https://github.com/Gabi-m-p
+
+"Covid 19 Data Api"
+https://www.covid19-api.com/
+
+"OpenTripMap Api"
+https://opentripmap.io/product
+
+<!-- # <Your-Project-Title>
 ## Description
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 - What was your motivation?
@@ -35,4 +76,4 @@ If your project has a lot of features, list them here.
 ## How to Contribute
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 ## Tests
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Go the extra mile and write tests for your application. Then provide examples on how to run them here. -->
