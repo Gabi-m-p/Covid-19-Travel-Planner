@@ -17,7 +17,7 @@ In order to do this two server side api's were integrated into the application u
 
 ## Application
 
-The application can be accessed here: https://gabi-m-p.github.io/Group-Project-1/
+The application can be accessed here: https://gabi-m-p.github.io/Covid-19-Travel-Planner/
 
 ![Travel Planner Screenshot](assets/Images/TravelPlanner.png)
 
