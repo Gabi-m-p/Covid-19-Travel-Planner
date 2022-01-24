@@ -24,6 +24,7 @@ The application can be accessed here: https://gabi-m-p.github.io/Covid-19-Travel
 ## Usage
 
 This application can be used in any web browser.
+Details regarding issues and further development of the application located here: https://docs.google.com/presentation/d/1TFlNL4PixglSMs-1m4jYU2zUo6N3M9yIANh5is5DtEM/edit#slide=id.g29f43f0a72_0_10
 
 ## Credits
 
